@@ -4,7 +4,7 @@
   right: auto;
   height: calc(100vh - 4rem);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .side-nav-shrink {
@@ -57,7 +57,7 @@ app-home {
 
 app-footer {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   background-color: green;
   width: 100%;

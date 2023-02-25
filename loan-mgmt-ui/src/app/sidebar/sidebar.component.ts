@@ -9,45 +9,51 @@ export class SidebarComponent implements OnInit {
   list = [
     {
       id: '1',
-      name: 'Home',
+      name: 'Dashboard',
       icon: 'fa-solid fa-house',
       link: 'home'
     },
     {
       id: '2',
-      name: 'Analytics',
-      icon: 'fa-solid fa-chart-line',
+      name: 'Loans',
+      icon: 'fa-sharp fa-solid fa-sack-dollar',
       link: 'home'
     },
 
     {
       id: '3',
-      name: 'Products',
-      icon: 'fa-solid fa-box',
+      name: 'Customers',
+      icon: 'fa-solid fa-users',
       link: 'home'
     },
     {
       id: '4',
-      name: 'Order',
-      icon: 'fa-solid fa-cart-shopping',
+      name: 'Payments',
+      icon: 'fa-solid fa-wallet',
+      link: 'home'
+    },
+    {
+      id: '5',
+      name: 'Invoices',
+      icon: 'fa-solid fa-money-bill',
+      link: 'home'
+    },
+    {
+      id: '6',
+      name: 'Loan Planner',
+      icon: 'fa-solid fa-credit-card',
+      link: 'home'
+    },
+    {
+      id: '7',
+      name: 'Reports',
+      icon: 'fa-solid fa-chart-line',
       link: 'home'
     },
     {
       id: '5',
       name: 'Settings',
       icon: 'fa-solid fa-gear',
-      link: 'home'
-    },
-    {
-      id: '6',
-      name: 'About',
-      icon: 'fa-solid fa-circle-info',
-      link: 'home'
-    },
-    {
-      id: '7',
-      name: 'Contact',
-      icon: 'fa-solid fa-phone',
       link: 'home'
     },
   ];
