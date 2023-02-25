@@ -1,1 +1,33 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3">
+  <div class="side-nav-button p-2 me-3 text-light" (click)="toggleSideNav()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <a href="#" class="navbar-brand px-4">Home</a>
+  <div class="navbar-collapse">
+    <ul class="navbar-nav me-auto bg-dark">
+
+      <li class="nav-item dropdown" appDropdown  #r2="appDropdown">
+        <a href="#" class="nav-link dropdown-toggle" role="button" >
+          Projects
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark" [ngClass]="{show: r2.isOpen}">
+          <li><a href="#" class="dropdown-item">Child 1</a></li>
+          <li><a href="#" class="dropdown-item">Child 2</a></li>
+          <li><a href="#" class="dropdown-item">Child 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <form action="#" class="d-flex me-5">
+    <input type="search" class="form-control me-2" placeholder="Search">
+    <button class="btn btn-outline-light">Search</button>
+  </form>
+  <div class="profile" appDropdown #profile="appDropdown">
+    <button class="btn btn-outline-light dropdown-toggle">Anshu</button>
+    <ul class="settings bg-black dropdown-menu" [ngClass]="{show:profile.isOpen}">
+      <li><a href="#" class="dropdown-item">Profile</a></li>
+      <li><a href="#" class="dropdown-item">Settings</a></li>
+      <li><a href="#" class="dropdown-item">Logout</a></li>
+    </ul>
+  </div>
+</nav>

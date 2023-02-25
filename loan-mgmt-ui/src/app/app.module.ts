@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { DropdownDirective } from './shared/directives/dropdown.directive';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './component/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    HomeComponent,
+    FooterComponent,
+    DropdownDirective,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

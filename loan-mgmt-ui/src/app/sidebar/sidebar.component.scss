@@ -1,0 +1,91 @@
+.side-nav-content{
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-list  {
+  background-color: black;
+  left: 0;
+  padding: 0;
+  flex-grow: 1;
+  // height: calc(100% - 200px);
+
+  max-height: calc(100% - 200px);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 5px;
+  cursor: pointer;
+  align-content: center;
+}
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list-item i {
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  line-height: 25px;
+  color: white;
+}
+
+.nav-list-item span a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  margin-right: auto;
+}
+
+ul li a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: white;
+  // font-size: large;
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+  left: 0;
+}
+
+ul li:hover {
+  color: black;
+  border: 1px solid wheat;
+  background-color: white;
+  border-radius: 20px;
+  a {
+    color: black;
+    text-decoration: solid;
+  }
+  i {
+    color: black;
+  }
+}
+
+.user {
+  color: black;
+  background-color: white;
+  bottom: 0;
+  border: 2px solid green;
+  height: 80px;
+}
+
+

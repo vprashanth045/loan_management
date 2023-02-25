@@ -1,1 +1,20 @@
-<p>sidebar works!</p>
+<div class="side-nav-content">
+  <ul class="nav-list">
+    <li
+      *ngFor="let item of list"
+      class="nav-list-item border-white"
+      [ngClass]="{ 'nav-list-open': sideNavStatus }"
+    >
+      <i class="{{ item.icon }} border-white"></i>
+      <span
+        class="border-white"
+        [ngClass]="{ 'nav-item-close': !sideNavStatus }"
+        ><a href="#">{{ item.name }}</a></span
+      >
+    </li>
+  </ul>
+
+  <div class="user">
+    anshu
+  </div>
+</div>
