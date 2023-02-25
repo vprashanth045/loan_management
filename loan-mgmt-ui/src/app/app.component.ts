@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  sideNavOpen = true;
   title = 'loan-mgmt';
+  ngOnInit(): void {
+    if(window.innerWidth > 1000){
+      this.sideNavOpen  = false;
+    }
+
+  }
 }

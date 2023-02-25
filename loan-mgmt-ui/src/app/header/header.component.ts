@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+// import {  } from 'stream';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  @Output() sideNavClicked = new EventEmitter<boolean>();
+  sideNavOpen = true;
   constructor() { }
 
   ngOnInit(): void {
+    if(window.innerWidth > 1000){
+      this.sideNavOpen  = false;
+    }
   }
-  toggleSideNav (){
 
+  toggleSideNav (){
+    this.sideNavOpen = !this.sideNavOpen;
+    this.sideNavClicked.emit(this.sideNavOpen);
   }
 }

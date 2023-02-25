@@ -18,3 +18,16 @@ nav {
   padding: 10px;
   color: white;
 }
+.sidenav-open {
+  background-color: rgb(65, 64, 64);
+}
+.side-nav-button {
+  font-size: 25px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.side-nav-button:hover {
+  background-color: rgb(54, 53, 53);
+  border-radius: 15px;
+}

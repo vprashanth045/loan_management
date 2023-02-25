@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark px-3">
-  <div class="side-nav-button p-2 me-3 text-light" (click)="toggleSideNav()">
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3" [ngClass]="{'sidenav-open': sideNavOpen}">
+  <div class="side-nav-button me-3 text-light" (click)="toggleSideNav()">
     <i class="fa-solid fa-bars"></i>
   </div>
   <a href="#" class="navbar-brand px-4">Home</a>

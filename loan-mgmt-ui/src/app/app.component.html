@@ -1,10 +1,10 @@
-<div class="container-fluid g-0">
-  <app-header></app-header>
+<div class="main-app g-0">
+  <app-header (sideNavClicked)="sideNavOpen = $event"></app-header>
   <main>
-    <div class="sidebar">
+    <div class="sidebar" [ngClass]="{'side-nav-shrink' : sideNavOpen}">
       <app-sidebar></app-sidebar>
     </div>
-    <div class="content">
+    <div class="content" [ngClass]="{'content-expand' : sideNavOpen}">
       <app-home></app-home>
       <app-footer></app-footer>
     </div>
