@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './component/header/header.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { FooterComponent } from './component/footer/footer.component';
 import { DropdownDirective } from './shared/directives/dropdown.directive';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './component/home/home.component';
 import { ProfileComponent } from './component/profile/profile.component';
 
 @NgModule({
@@ -18,13 +18,10 @@ import { ProfileComponent } from './component/profile/profile.component';
     HomeComponent,
     FooterComponent,
     DropdownDirective,
-    ProfileComponent
+    ProfileComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
