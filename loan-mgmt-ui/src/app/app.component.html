@@ -1,11 +1,11 @@
 <div class="main-app g-0">
   <app-header (sideNavClicked)="sideNavOpen = $event"></app-header>
   <main>
-    <div class="sidebar" [ngClass]="{'side-nav-shrink' : sideNavOpen}">
+    <div class="sidebar" [ngClass]="{ 'side-nav-shrink': sideNavOpen }">
       <app-sidebar></app-sidebar>
     </div>
-    <div class="content" [ngClass]="{'content-expand' : sideNavOpen}">
-      <app-home></app-home>
+    <div class="content" [ngClass]="{ 'content-expand': sideNavOpen }">
+      <router-outlet class="app-home"></router-outlet>
       <app-footer></app-footer>
     </div>
   </main>

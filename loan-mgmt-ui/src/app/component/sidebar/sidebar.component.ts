@@ -11,50 +11,50 @@ export class SidebarComponent implements OnInit {
       id: '1',
       name: 'Dashboard',
       icon: 'fa-solid fa-house',
-      link: 'home'
+      link: 'dashboard'
     },
     {
       id: '2',
       name: 'Loans',
       icon: 'fa-sharp fa-solid fa-sack-dollar',
-      link: 'home'
+      link: 'loans'
     },
 
     {
       id: '3',
       name: 'Customers',
       icon: 'fa-solid fa-users',
-      link: 'home'
+      link: 'customers'
     },
     {
       id: '4',
       name: 'Payments',
       icon: 'fa-solid fa-wallet',
-      link: 'home'
+      link: 'payments'
     },
     {
       id: '5',
       name: 'Invoices',
       icon: 'fa-solid fa-money-bill',
-      link: 'home'
+      link: 'invoices'
     },
     {
       id: '6',
-      name: 'Loan Planner',
+      name: 'Loan Plans',
       icon: 'fa-solid fa-credit-card',
-      link: 'home'
+      link: 'loan-types'
     },
     {
       id: '7',
       name: 'Reports',
       icon: 'fa-solid fa-chart-line',
-      link: 'home'
+      link: 'reports'
     },
     {
-      id: '5',
+      id: '8',
       name: 'Settings',
       icon: 'fa-solid fa-gear',
-      link: 'home'
+      link: 'settings'
     },
   ];
   sideNavStatus: boolean = true;

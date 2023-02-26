@@ -4,12 +4,14 @@
       *ngFor="let item of list"
       class="nav-list-item border-white"
       [ngClass]="{ 'nav-list-open': sideNavStatus }"
-    >
+      [routerLink]="item.link"
+      routerLinkActive="active"
+      >
       <i class="{{ item.icon }} border-white"></i>
       <span
         class="border-white"
         [ngClass]="{ 'nav-item-close': !sideNavStatus }"
-        ><a href="#">{{ item.name }}</a></span
+        ><a>{{ item.name }}</a></span
       >
     </li>
   </ul>

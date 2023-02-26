@@ -26,6 +26,13 @@ ul li {
   cursor: pointer;
   align-content: center;
 }
+
+.active {
+  background-color: cadetblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 .nav-list-item {
   display: flex;
   align-items: center;
