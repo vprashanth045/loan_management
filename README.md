@@ -29,6 +29,7 @@ Step #8 - create UI
     3) create home and footer
     4) add css properties
     5) lazy loading module
+        setup routes for different sections
         i) ng g module customers --route customer --module app.module
 # Backend
 Step #9 
@@ -45,3 +46,6 @@ Step #9
           v) Customers
          vi) settings
         vii) AuditLogs
+
+# Frontend
+Enable active routing
