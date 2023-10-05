@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 mongoose
   .connect(
     "mongodb+srv://anshuahi:Uf8YBE2VK2kFFMiC@cluster0.bol3afh.mongodb.net/LoansManager?retryWrites=true&w=majority"
+    // "mongodb://localhost:27017/loan"
   )
   .then(() => {
     console.log("Database connected!");
